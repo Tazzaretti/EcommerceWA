@@ -888,6 +888,33 @@
             "rid": "win"
           }
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
       }
     }
   },
@@ -2244,6 +2271,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2251,23 +2288,25 @@
       "EntityFramework >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
+      "Model >= 1.0.0",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tomi\\.nuget\\packages\\": {}
+    "C:\\Users\\tomia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\obj\\",
+      "projectPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\WebApplication1\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\tomia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tomia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2280,7 +2319,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Model\\Model.csproj"
+            },
+            "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Service\\Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2340,7 +2386,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"EntityFramework 6.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "Package 'EntityFramework 6.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         "net6.0"

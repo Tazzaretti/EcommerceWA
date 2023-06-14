@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
-using WebApplication1.Services;
+using Model.Models;
+using Service.Services;
 
 namespace WebApplication1.Controllers
 {
@@ -34,14 +34,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddVenta(Venta venta)
+        public IActionResult AddVenta(Ventas venta)
         {
             _ventaService.AddVenta(venta);
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateVenta(int id, Venta venta)
+        public IActionResult UpdateVenta(int id, Ventas venta)
         {
             if (id != venta.IdVenta)
             {

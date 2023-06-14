@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
-using WebApplication1.Services;
+using Model.Models;
+using Service.Services;
 
 namespace WebApplication1.Controllers
 {
@@ -34,7 +34,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateEnvio(Envio envio)
+        public IActionResult CreateEnvio(Envios envio)
         {
             // Aquí puedes realizar la lógica para guardar el envío en la base de datos
             // utilizando tu servicio de envío (IEnvioService)

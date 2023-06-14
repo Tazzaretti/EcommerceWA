@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
-using WebApplication1.Services;
+using Model.Models;
+using Service.Services;
 
 namespace WebApplication1.Controllers
 {
@@ -34,14 +34,14 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddUser(User user)
+        public IActionResult AddUser(Users user)
         {
             _userService.AddUser(user);
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateUser(int id, User user)
+        public IActionResult UpdateUser(int id, Users user)
         {
             if (id != user.Id)
             {

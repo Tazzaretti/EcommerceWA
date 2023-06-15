@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using Model.Models;
-
+using WebApplication1;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configurar el contexto de la base de datos y la cadena de conexión
 builder.Services.AddDbContext<ecommerceDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ecommerceDBConnection")));
 
-
+CompositeRoot.DependencyInjection(builder);
 // Add services to the container.
 builder.Services.AddControllers();
 //builder.Services.AddScoped<IEnvioService, EnvioService>();

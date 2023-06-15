@@ -2294,19 +2294,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tomi\\.nuget\\packages\\": {}
+    "C:\\Users\\qvedo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\WebApplication1\\obj\\",
+      "projectPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\WebApplication1\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\qvedo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\qvedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2320,11 +2320,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj"
+            "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj"
             },
-            "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Service\\Service.csproj"
+            "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Service\\Service.csproj"
             }
           }
         }

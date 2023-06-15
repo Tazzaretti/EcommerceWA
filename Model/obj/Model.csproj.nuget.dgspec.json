@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj": {}
+    "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj": {
+    "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\obj\\",
+        "projectPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\qvedo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\qvedo\\OneDrive\\Escritorio\\EcommerceWA\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\qvedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

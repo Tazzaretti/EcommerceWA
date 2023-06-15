@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Model.Models;
+using Model.ViewModels;
 using Service.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Controllers
 {
@@ -19,10 +21,19 @@ namespace WebApplication1.Controllers
         public IActionResult GetUsers()
         {
             var users = _userService.GetUsers();
-            return Ok(users);
+
+            var usersViewModel = users.Select(user => new UsersViewModel
+            {
+                Dni = user.Dni,
+                Email = user.Email,
+                Nombre = user.Nombre,
+                Tel = user.Tel
+            }).ToList();
+
+            return Ok(usersViewModel);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetUserById")]
         public IActionResult GetUserById(int id)
         {
             var user = _userService.GetUserById(id);
@@ -30,7 +41,16 @@ namespace WebApplication1.Controllers
             {
                 return NotFound();
             }
-            return Ok(user);
+
+            var usersViewModel = new UsersViewModel
+            {
+                Dni = user.Dni,
+                Email = user.Email,
+                Nombre = user.Nombre,
+                Tel = user.Tel
+            };
+            
+            return Ok(usersViewModel);
         }
 
         [HttpPost]
@@ -40,7 +60,7 @@ namespace WebApplication1.Controllers
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("UpdateUserById")]
         public IActionResult UpdateUser(int id, Users user)
         {
             if (id != user.Id)
@@ -51,7 +71,7 @@ namespace WebApplication1.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteUserById")]
         public IActionResult DeleteUser(int id)
         {
             _userService.DeleteUser(id);

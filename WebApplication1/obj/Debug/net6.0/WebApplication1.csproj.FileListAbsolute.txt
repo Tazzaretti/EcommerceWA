@@ -135,3 +135,7 @@ C:\Users\tomia\OneDrive\Escritorio\EcommerceWA\EcommerceWA\WebApplication1\bin\D
 C:\Users\tomia\OneDrive\Escritorio\EcommerceWA\EcommerceWA\WebApplication1\bin\Debug\net6.0\Service.dll
 C:\Users\tomia\OneDrive\Escritorio\EcommerceWA\EcommerceWA\WebApplication1\bin\Debug\net6.0\Model.pdb
 C:\Users\tomia\OneDrive\Escritorio\EcommerceWA\EcommerceWA\WebApplication1\bin\Debug\net6.0\Service.pdb
+C:\Users\Tomi\Desktop\eccomerceWA\eccomerceWA\WebApplication1\bin\Debug\net6.0\Model.dll
+C:\Users\Tomi\Desktop\eccomerceWA\eccomerceWA\WebApplication1\bin\Debug\net6.0\Service.dll
+C:\Users\Tomi\Desktop\eccomerceWA\eccomerceWA\WebApplication1\bin\Debug\net6.0\Model.pdb
+C:\Users\Tomi\Desktop\eccomerceWA\eccomerceWA\WebApplication1\bin\Debug\net6.0\Service.pdb

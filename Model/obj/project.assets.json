@@ -2008,19 +2008,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomia\\.nuget\\packages\\": {}
+    "C:\\Users\\Tomi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\tomia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomia\\OneDrive\\Escritorio\\EcommerceWA\\EcommerceWA\\Model\\obj\\",
+      "projectPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\Tomi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tomi\\Desktop\\eccomerceWA\\eccomerceWA\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tomia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

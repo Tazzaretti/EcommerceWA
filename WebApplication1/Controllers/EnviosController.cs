@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Model.Models;
+using Model.ViewModels;
 using Service.Services;
 
 namespace WebApplication1.Controllers
@@ -19,10 +20,17 @@ namespace WebApplication1.Controllers
         public IActionResult GetEnvios()
         {
             var envios = _envioService.GetEnvios();
-            return Ok(envios);
+
+            var enviosViewModel = envios.Select(envio => new EnviosViewModel
+            {
+                Destino = envio.Destino,
+                Origen = envio.Origen
+            }).ToList();
+
+            return Ok(enviosViewModel);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetEnvioById")]
         public IActionResult GetEnvioById(int id)
         {
             var envio = _envioService.GetEnvioById(id);
@@ -30,7 +38,13 @@ namespace WebApplication1.Controllers
             {
                 return NotFound();
             }
-            return Ok(envio);
+            var enviosViewModel = new EnviosViewModel
+            {
+                Destino = envio.Destino,
+                Origen = envio.Origen
+            };
+
+            return Ok(enviosViewModel);
         }
 
         [HttpPost]

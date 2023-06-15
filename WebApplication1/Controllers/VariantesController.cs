@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Model.Models;
 using Service.Services;
+using Model.ViewModels;
 
 namespace WebApplication1.Controllers
 {
@@ -22,17 +23,24 @@ namespace WebApplication1.Controllers
             return Ok();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("ObtenerVariantePorId")]
         public IActionResult ObtenerVariantePorId(int id)
         {
             var variante = _varianteService.ObtenerVariantePorId(id);
             if (variante == null)
                 return NotFound();
 
-            return Ok(variante);
+            var varianteViewModel = new VarianteViewModel
+            {
+                Color = variante.Color,
+                Talle = variante.Talle,
+                NombreProducto = variante.IdProductoNavigation.Articulo
+            };
+
+            return Ok(varianteViewModel);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("ActualizarVariantePorId")]
         public IActionResult ActualizarVariante(int id, Variante variante)
         {
             if (id != variante.Id)
@@ -42,7 +50,7 @@ namespace WebApplication1.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("EliminarVariantePorId")]
         public IActionResult EliminarVariante(int id)
         {
             _varianteService.EliminarVariante(id);
@@ -53,7 +61,15 @@ namespace WebApplication1.Controllers
         public IActionResult ObtenerTodosLosVariantes()
         {
             var variantes = _varianteService.ObtenerTodosLosVariantes();
-            return Ok(variantes);
+
+            var variantesViewModel = variantes.Select(variante => new VarianteViewModel
+            {
+                Color = variante.Color,
+                Talle = variante.Talle,
+                NombreProducto = variante.IdProductoNavigation.Articulo
+            }).ToList();
+
+            return Ok(variantesViewModel);
         }
     }
 }
